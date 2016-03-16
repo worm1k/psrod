@@ -1,6 +1,7 @@
 <?php
-
-require_once('employee.php');
+/**
+ * Indexation arrays
+ */
 require_once('database.php');
 require_once('functions.php');
 $indexes = array(
@@ -68,7 +69,6 @@ echo 'current id: ' . $currentIndex;echo '<br/>';
                     <a href="create.php" class="btn btn-success">Create</a>
                     <a href="update.php?id=<?php echo $currentIndex; ?>" class="btn btn-warning">Update</a>
                     <a href="delete.php?id=<?php echo $currentIndex; ?>" class="btn btn-danger">Delete</a>
-                    <a href="unset.php" class="btn btn-primary">Reset session</a>
                 </p>
 
 
@@ -177,8 +177,15 @@ echo 'current id: ' . $currentIndex;echo '<br/>';
                 </table>
             </div>
         </div> <!-- /container -->
+
+    <footer class="panel-footer">
+        <div class="container">
+            <p><a href="https://github.com/worm1k/psrod">https://github.com/worm1k/psrod</a></p>
+            <p><a href="https://github.com/worm1k/psrod">https://github.com/worm1k/psrod</a></p>
+            <p><a href="https://github.com/worm1k/psrod">https://github.com/worm1k/psrod</a></p>
+            <p><a href="https://github.com/worm1k/psrod">https://github.com/worm1k/psrod</a></p>
+            <p><a href="https://github.com/worm1k/psrod">https://github.com/worm1k/psrod</a></p>
+        </div>
+    </footer>
     </body>
 </html>
-<?php
-Database::disconnect();
-?>
